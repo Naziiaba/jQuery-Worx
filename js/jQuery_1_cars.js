@@ -6,10 +6,9 @@ $(() => {
     //NOTE: "()==>" these two together a function.
     const favoriteCar = $('#cars option:selected').text();
     $('#car-choice').text(favoriteCar);
-    $('#DateToTestDrive').text("Select Date to Test Drive");
+    $('#askDateToTestDrive').text("Select Date to Test Drive");
     $('#DateToTestDrive').datepicker();
-    
-    
+
     alert(favoriteCar);
     switch (favoriteCar) {
       case 'BMW':
@@ -44,4 +43,3 @@ $(() => {
 
   }); //change
 }); //ready
-
