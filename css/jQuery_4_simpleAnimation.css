@@ -1,12 +1,19 @@
 /*CSS */
-#container {
+html {
+  height: 100%;
+
+  }
+
+  #container {
   text-align: center;
 }
 
 #square {
   margin: 0 auto;
-  display: block;
+  display: absolute;
   background-color: purple;
   width: 30px;
   height: 30px;
+  left: 0;
+  right: 0;
 }
