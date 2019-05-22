@@ -7,7 +7,11 @@ $(() => {
     $('#clicker').click(() => {
       //alert('Hi');
       $('#square').animate({
-          width : '300px'
+          width : '300px',
+          height: '300px',
+          opacity: 0.2,
+          bottom: 0
+
 
 
 
