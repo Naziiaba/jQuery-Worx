@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  font: 62.5% Verdana, Helvetica, Arial, sans-serif;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
   color: #000;
   background-color: #ccffcc;
 }
@@ -26,4 +26,7 @@ body {
   width: 130px;
   margin: .5em 0;
   cursor: pointer;
+}
+.speech {
+  font-size: 12px;
 }
