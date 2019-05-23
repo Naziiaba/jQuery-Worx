@@ -6,10 +6,24 @@ html, body {
 body {
   font: 62.5% Verdana, Helvetica, Arial, sans-serif;
   color: #000;
-  background-color: #ffffcc;
+  background-color: #ccffcc;
 }
 
 #container {
   font-size: 14px;
   margin: 10px 2em;
+}
+
+#switcher {
+  width: 1100px;
+  height: 80px;
+  padding: .5em;
+  border: 1px solid #777;
+  background-color: white;
+}
+
+.label {
+  width: 130px;
+  margin: .5em 0;
+  cursor: pointer;
 }
