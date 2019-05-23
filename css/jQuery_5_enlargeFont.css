@@ -1,0 +1,15 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 62.5% Verdana, Helvetica, Arial, sans-serif;
+  color: #000;
+  background-color: #ffffcc;
+}
+
+#container {
+  font-size: 14px;
+  margin: 10px 2em;
+}
