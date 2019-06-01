@@ -106,6 +106,25 @@ $('#slider').slider('value', slideIndex);
 
 });  //indicator
 
+//change the title background then pauseOnHover
+$cars.hover((e) => {
+$(e.currentTarget)
+  .find('.title')
+  .animate({backgroundColor: '#eee',
+            color: '#000'
+            }, 1000);
+  },
+
+
+  (e) => {
+    $(e.currentTarget)
+      .find('.title')
+      .animate({backgroundColor: '#000',
+                color: '#fff'
+                }, 1000);
+
+}); //hover
+
 
 
 }); //ready
