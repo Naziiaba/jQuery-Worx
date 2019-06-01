@@ -19,7 +19,7 @@ $(() => {
 
 
 // PAUSE button
-  $('<button>')
+  const $pauseButton = $('<button/>')
   .text('Pause')
   .click(() => {
     //alert ("Paused");
@@ -29,11 +29,19 @@ $(() => {
 
 
 // PAUSE button
-  $('<button>')
+  const $resumeButton = $('<button/>')
   .text('Resume')
   .click(() => {
     //alert ("Resume");
       $('#cars').cycle('resume');
   })
   .appendTo($controls);
+
+
+    //Slider
+    $('<div/>')
+    .attr('id', 'slider')
+    .slider()
+    .appendTo($controls);
+
 }); //ready
