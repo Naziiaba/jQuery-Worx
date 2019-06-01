@@ -27,6 +27,14 @@ $(() => {
   })
   .appendTo($controls);
 
+  // STOP button
+    const $stopButton = $('<button/>')
+    .text('Stop')
+    .click(() => {
+      //alert ("Paused");
+      $('#cars').cycle('stop');
+    })
+    .appendTo($controls);
 
 // RESUME button
   const $resumeButton = $('<button/>')
@@ -39,8 +47,7 @@ $(() => {
 
 
 //Resume or Shake $pauseButton
-//Resume
-$('<button/>')
+const $shakeButton = $('<button/>')
 .text('Resume or Shake')
 .click((e) => {
   //alert ("Resume");
@@ -57,10 +64,32 @@ $('<button/>')
 .appendTo($controls);
 
 
+//add an icon to the pause button
+$pauseButton.button({
+    icons: {primary: 'ui-icon-pause'}
+}); // $pauseButton
+
+
+//add an icon to the resume button
+$resumeButton.button({
+    icons: {primary: 'ui-icon-play'}
+}); // $resumeButton
+
+//add an icon to the stop button
+$stopButton.button({
+    icons: {primary: 'ui-icon-stop'}
+}); // $stopButton
+
+//add an icon to the shake button
+$shakeButton.button({
+    icons: {primary: 'ui-icon-shake'}
+}); // $shakeButton
+
     //Slider
     $('<div/>')
     .attr('id', 'slider')
     .slider({
+      orientation: "vertical",
       min: 0,
       max: $cars.find('li').length -1,
       slide: (e, ui) => {
@@ -68,5 +97,15 @@ $('<button/>')
       }
     })
     .appendTo($controls);
+
+
+// Move the slider indicator with slideshow
+$cars.on('cycle-before', (event, options) => {
+const slideIndex = options.nextSlide;
+$('#slider').slider('value', slideIndex);
+
+});  //indicator
+
+
 
 }); //ready
