@@ -28,7 +28,7 @@ $(() => {
   .appendTo($controls);
 
 
-// PAUSE button
+// RESUME button
   const $resumeButton = $('<button/>')
   .text('Resume')
   .click(() => {
@@ -38,10 +38,35 @@ $(() => {
   .appendTo($controls);
 
 
+//Resume or Shake $pauseButton
+//Resume
+$('<button/>')
+.text('Resume or Shake')
+.click((e) => {
+  //alert ("Resume");
+  const paused = $cars.is('.cycle-paused');
+  if (paused) {
+    $cars.cycle('resume');
+  }
+    else {
+      $(e.target)
+        .effect('shake', {distance: 10});
+    }
+
+}) // click
+.appendTo($controls);
+
+
     //Slider
     $('<div/>')
     .attr('id', 'slider')
-    .slider()
+    .slider({
+      min: 0,
+      max: $cars.find('li').length -1,
+      slide: (e, ui) => {
+        $cars.cycle(ui.value);
+      }
+    })
     .appendTo($controls);
 
 }); //ready
