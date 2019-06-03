@@ -125,6 +125,17 @@ $(e.currentTarget)
 
 }); //hover
 
+  //highlighted focus
+
+$('h1')
+  .click((e) => {
+    $(e.target)
+      .toggleClass(
+        'highlighted',
+        'slow',
+        'easeInExpo'
+      );
+  });
 
 
 }); //ready
