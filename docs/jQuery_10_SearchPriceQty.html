@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Searching the Price</title>
+    <!-- 1- getting Google CDN for jQuery Core-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!-- 2- getting Google CDN for jQuery UI-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+    <!-- 3 getting My Application script-->
+    <script type="text/javascript" src="/js/jQuery_10_SearchPriceQty.js">
+
+    </script>
+      <!-- 4- getting My Application script-->
+    <link rel="stylesheet" href="/css/jQuery_10_SearchPriceQty.css">
+  </head>
+  <body>
+    <div id="container">
+      <h1>Search Content</h1>
+      <form target="#">
+        <label for="Price">Max Price</label>
+        <input type="number" name="price" min="0"
+        step="0.01" placeholder="2000.0"/>
+        <input type="button" name="search" value="Search">
+
+        <label for="Price">Max Quantity</label>
+        <input type="number" name="qty" min="0"
+        step="0.01" placeholder="5.0"/>
+        <input type="button" name="searchQTY" value="Search Quantity">
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Stock Check Date</th>
+            <th>Manufacturer</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2018-01-01</td>
+            <td>Apple</td>
+            <td>iPhone 8</td>
+            <td>20</td>
+            <td>700</td>
+          </tr>
+
+          <tr>
+            <td>2019-08-01</td>
+            <td>Apple</td>
+            <td>iPhone XR</td>
+            <td>54</td>
+            <td>800</td>
+          </tr>
+
+          <tr>
+            <td>2019-01-01</td>
+            <td>Apple</td>
+            <td>iPhone XS</td>
+            <td>60</td>
+            <td>2100</td>
+          </tr>
+
+          <tr>
+            <td>2019-01-01</td>
+            <td>Apple</td>
+            <td>iPhone 10 - 32GB</td>
+            <td>32</td>
+            <td>2500</td>
+          </tr>
+
+          <tr>
+            <td>2019-01-01</td>
+            <td>Apple</td>
+            <td>iPhone 10 - 64GB</td>
+            <td>25</td>
+            <td>3700</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </body>
