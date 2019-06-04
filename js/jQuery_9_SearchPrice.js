@@ -1,1 +1,5 @@
-alert('Hello')
+//alert('Hello')
+$(() => {
+  //$(selector).action;
+$('input[name=search]')
+})
