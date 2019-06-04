@@ -1,0 +1,34 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #000;
+  background-color: beige;
+  font: 62.5% Verdana, Arial, Helvetica, sans-serif;
+}
+
+#container {
+  font-size: 1.2em;
+  margin: 10px 2em;
+}
+
+h1 {                    //h1 is a SELECTOR
+  font-size: 2.2em;    //propery: value;
+  margin-bottom: .5em;
+}
+
+form {
+  margin: 10px 0;
+}
+
+table {
+width: 80%;
+}
+
+th {
+  background-color: orange;
+  color: #000;
+  text-align: left;
+}
