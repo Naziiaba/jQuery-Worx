@@ -10,13 +10,21 @@ const stripe = () => {
   .find('tbody')
   .each((i, element) => {
     $(element)
-    .children('visible')
+    .children(':visible')
     .has('td')
-    .filter(i => (i%4)<2)
+    .filter(i => (i % 4)<2)
     .addClass('alt')
   }); //each
 } //stripe
 
-  stripe();
+stripe();
 
-  }); //ready
+$('#topics a')
+    .click((e) => {
+      alert('hello')
+
+
+
+
+    }); //click
+}); //ready
