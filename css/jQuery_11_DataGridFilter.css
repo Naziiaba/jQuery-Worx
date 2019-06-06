@@ -31,7 +31,7 @@ body {
 }
 
 #topics a:hover {
-  background-color: blue;
+  background-color: orange;
   color: #fff;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 #news thead th {
-  background-color: #4747d1;
+  background-color: #8585e0;
 }
 
 #news tbody th {
@@ -68,4 +68,15 @@ body {
 
 #news .alt-2 td {
   background-color: #ddd;
+}
+#news td.selected {
+  background-color: #eee;
+}
+.highlighted {
+  font-weight: bold;
+  font-style: italic;
+  color: #080;
+}
+#news td.active {
+  background-color: #dfd;   //very light shade of green
 }
