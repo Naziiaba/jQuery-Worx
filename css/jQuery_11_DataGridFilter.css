@@ -1,0 +1,71 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #000;
+  background-color: beige;
+  font: 62.5% Verdana, Arial, Helvetica, sans-serif;
+}
+
+#container {
+  font-size: 1.2em;
+  margin: 10px 2em;
+}
+
+#topics {
+  font-size: 0.9em;
+  margin: 6px 0;
+}
+
+#topics a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 6px;
+}
+
+#topics a.selected {
+  background-color: orange;
+  color: #fff;
+}
+
+#topics a:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+#news {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#news th,
+#news td {
+  padding: 3px 6px;
+  vertical-align: top;
+}
+#news td:first-child {
+  width: 48px;
+}
+
+#news th {
+  text-align: left;
+  color: #000;
+}
+
+#news thead th {
+  background-color: #4747d1;
+}
+
+#news tbody th {
+  background-color: #c2c2f0;
+}
+
+#news .alt td {
+  background-color: #ccc;
+}
+
+#news .alt-2 td {
+  background-color: #ddd;
+}
