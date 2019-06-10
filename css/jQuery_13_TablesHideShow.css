@@ -1,0 +1,26 @@
+#container {
+  margin: 10px 2em;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+table {
+  margin: 1em 0;
+}
+
+tbody td img {
+  width: 100px;
+  height: 80px;
+}
+
+th {
+  text-align: left;
+  white-space: nowrap;
+  background-color: #eee;
+}
+th, td {
+  padding: 3px 6px;
+}
