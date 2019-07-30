@@ -89,7 +89,7 @@ $shakeButton.button({
     $('<div/>')
     .attr('id', 'slider')
     .slider({
-      orientation: "vertical",
+      orientation: "horizontal",
       min: 0,
       max: $cars.find('li').length -1,
       slide: (e, ui) => {
