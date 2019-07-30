@@ -1,17 +1,23 @@
-ul#cars {
+body {
+  background-color: #fff;
+}
+#container {
+  width: 100px;
+  height: 450px;
+}
+  ul#cars {
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 210px;
-  width: 300px;
 }
 ul#cars li {
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 210px;
+  height: 200px;
   width: 500px;
-  background-color:  #0000b3;
+  background-color:  #fff;
+  border: 1px solid grey;
   position: relative;
 }
 ul#cars li img {
@@ -35,8 +41,9 @@ ul#cars li .dealer {
   padding: 10px 10px 0 10px;
   width: 180px;
   font-weight: bold;
-  background-color:  #0000b3;
+  background-color: #BD2031;
   color: #fff;
+
 }
 
 #cars-controls {
